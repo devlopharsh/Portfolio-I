@@ -1,16 +1,37 @@
-<<<<<<< HEAD
-# React + Vite
+# 🚀 Harsh Kumar's Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal developer portfolio — a showcase of my work, skills, and projects as a  **UI/UX Designer**, and **Frontend Engineer**. Built with modern web technologies and designed to reflect both creativity and technical proficiency.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# Portfolio
->>>>>>> 6584439148fe77cbc1d577a999968948e747095d
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, Tailwind CSS, Framer Motion
+- **Animations:** GSAP, Framer Motion
+- **Build Tool:** Vite
+- **Design:** Figma, Adobe XD
+- **Deployment:** GitHub Pages / Vercel / Netlify (specify if deployed)
+
+---
+
+## 📁 Features
+
+- 🌐 Fully responsive and mobile-friendly design
+- 💻 Interactive animations and smooth transitions
+- 🧩 Modular and maintainable component structure
+- 💡 Modern UI/UX principles
+- 🔗 Clickable sections for About, Skills, Projects, and Contact
+
+---
+
+## 🚧 Installation & Setup
+
+Clone the repository and install dependencies:
+
+```bash
+git clone https://github.com/devlopharsh/Portfolio.git
+cd Portfolio
+npm install
+npm run dev
