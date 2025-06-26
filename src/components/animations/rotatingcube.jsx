@@ -22,13 +22,13 @@ function WireCube({ size = 1, rotationDirection = 1 }) {
 
 export default function DoubleWireframeCube() {
     return (
-        <div className="w-1/2 h-screen">
-            <Canvas camera={{ position: [3, 3, 3], fov: 75 }}>
+        <div className="w-full h-screen relative top-0 left-0">
+            <Canvas  shadows={false} camera={{ position: [3, 3, 3], fov: 75 }}>
                 <ambientLight intensity={0.5} />
                 <pointLight position={[10, 10, 10]} intensity={2} color="#00ffff" />
 
-                <WireCube size={2} rotationDirection={1} />
-                <WireCube size={1} rotationDirection={-1} />
+                <WireCube size={1} rotationDirection={1} />
+                <WireCube size={3} rotationDirection={-1} />
 
                 <EffectComposer>
                     <Bloom
@@ -39,7 +39,7 @@ export default function DoubleWireframeCube() {
                     />
                 </EffectComposer>
             </Canvas>
-            <img src="./projector.png" alt="" height={100} width={100} className="h-[57%] w-1/2 relative bottom-[48%] left-[26%] z-0" />
+            <img src="./projector.png" alt="" height={100} width={50} className="h-[57%] w-1/4 relative bottom-[48%] left-[38%] z-0" />
         </div>
     );
 }

@@ -7,12 +7,11 @@ import Navbar from './components/navbar.jsx'
 import About from './components/about.jsx';
 import Projects from './components/projects.jsx';
 import Skills from './components/skills.jsx';
+import Contact from './components/contact.jsx';
 
 //imported animations
 import ParticleField from './components/animations/particlefield.jsx';
 import Glowcomponents from './components/animations/glowcomponent.jsx'
-import DoubleWireframeCube from './components/animations/rotatingcube.jsx';
-import FloatingTechIcons from './components/animations/floatingtechicon.jsx';
 
 
 function App() {
@@ -74,8 +73,7 @@ function App() {
         </section>
 
         <section id="contact" ref={sectionRefs.contact} className="min-h-screen px-10 py-20 bg-black/20 border-y-2 border-black">
-          <DoubleWireframeCube/>
-
+          <Contact />
         </section>
 
 
