@@ -4,11 +4,15 @@ import { motion } from 'framer-motion'
 
 /*{importing components}*/
 import Navbar from './components/navbar.jsx'
-import Glowcomponents from './components/animations/glowcomponent.jsx'
 import About from './components/about.jsx';
 import Projects from './components/projects.jsx';
-import ParticleField from './components/animations/particlefield.jsx';
 import Skills from './components/skills.jsx';
+
+//imported animations
+import ParticleField from './components/animations/particlefield.jsx';
+import Glowcomponents from './components/animations/glowcomponent.jsx'
+import DoubleWireframeCube from './components/animations/rotatingcube.jsx';
+import FloatingTechIcons from './components/animations/floatingtechicon.jsx';
 
 
 function App() {
@@ -69,13 +73,14 @@ function App() {
           <Skills />
         </section>
 
-        <section id="contact" ref={sectionRefs.contact} className="min-h-screen px-10 py-20">
-          
+        <section id="contact" ref={sectionRefs.contact} className="min-h-screen px-10 py-20 bg-black/20 border-y-2 border-black">
+          <DoubleWireframeCube/>
+
         </section>
 
 
         {/* Footer */}
-        <footer className="text-center py-6 text-sm text-[#8892b0]">
+        <footer className="text-center py-6 text-sm text-[#8892b0] bg-black/50 z-10">
           © {new Date().getFullYear()} Harsh Kumar. Built with React & Tailwind.
         </footer>
       </div>

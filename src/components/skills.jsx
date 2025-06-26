@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState,useRef,useEffect } from 'react'
 import { easeIn, motion } from 'framer-motion'
 
 
@@ -11,6 +11,27 @@ import Designer from './skills/design'
 
 const Skills = () => {
     const [iscomplete, setIsComplete] = useState(false);
+
+    const scrollContainerRef = useRef(null);
+
+    useEffect(() => {
+        const container = scrollContainerRef.current;
+
+        const onWheel = (e) => {
+            // Only trigger when hovered
+            if (container && container.matches(":hover")) {
+                e.preventDefault();
+                container.scrollLeft += e.deltaY;
+            }
+        };
+
+        container.addEventListener("wheel", onWheel, { passive: false });
+
+        return () => {
+            container.removeEventListener("wheel", onWheel);
+        };
+    }, []);
+
 
     return (
         <>
@@ -32,8 +53,9 @@ const Skills = () => {
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, ease: 'easeIn' }}
                         viewport={{ once: true, amount: 0.5 }} className='text-5xl text-white font-bold absolute top-10 right-10'>Skills & Experience</motion.h1>
-                    <div className="w-screen h-full overflow-x-scroll overflow-y-hidden no-scroll">
-                        <div className="w-[400vw] h-full flex gap-40 justify-start items-center relative">
+                    {/* Scroll Element */}
+                    <div ref={scrollContainerRef} className="w-screen h-full overflow-x-scroll overflow-y-hidden no-scroll">
+                        <div className="w-fit h-full flex gap-40 justify-start items-center relative">
                             {/* Animated horizontal pink line */}
                             <motion.div
                                 initial={{ width: '0%' }}

@@ -20,7 +20,7 @@ const FlipCard = ({image , heading , Exp , Cert }) => {
   return (
     <motion.div
       ref={tiltRef}
-      className="w-56 h-72 perspective rounded-xl mb-10"
+      className="w-56 h-72 perspective rounded-xl mb-10 shadow-lg shadow-white/10"
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}
       initial={{ opacity: 0, scale: 0.8 }}
@@ -42,7 +42,7 @@ const FlipCard = ({image , heading , Exp , Cert }) => {
         {/* Back Side */}
         <div className="absolute w-full h-full backface-hidden bg-gray-800 text-white rounded-xl flex flex-col items-center justify-center  transform rotate-y-180">
           <h2 className="font-bold text-xl">{heading}</h2>
-          <p>With Experience of {Exp} years <br /> certified by {Cert} </p>
+          <p className="mt-2">With Experience of {Exp} years <br /> certified by {Cert} </p>
         </div>
       </div>
     </motion.div>
