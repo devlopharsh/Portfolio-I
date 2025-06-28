@@ -72,10 +72,9 @@ function App() {
           <Skills />
         </section>
 
-        <section id="contact" ref={sectionRefs.contact} className="min-h-screen px-10 py-20 bg-black/20 border-y-2 border-black">
+        <section id="contact" ref={sectionRefs.contact} className="min-h-screen px-10 py-20 bg-black/20 border-y-2 border-black relative overflow-hidden">
           <Contact />
         </section>
-
 
         {/* Footer */}
         <footer className="text-center py-6 text-sm text-[#8892b0] bg-black/50 z-10">

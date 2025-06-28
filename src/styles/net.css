@@ -1,0 +1,19 @@
+
+
+.neon-border {
+  box-shadow:
+    0 0 10px rgba(236, 72, 154, 0.121),   /* pink-500 */
+    0 0 20px rgba(219, 39, 120, 0.203),   /* pink-600 */
+    0 0 30px rgba(219, 39, 120, 0.355),   /* pink-600 */
+    0 0 40px rgba(219, 39, 120, 0.523);   /* pink-600 */
+}
+
+.neon-net-div {
+   width: 200vw;
+  height: 200vh;
+  background: radial-gradient(circle at center, rgba(236, 72, 153, 0.05), transparent 30%),
+              repeating-linear-gradient(45deg, rgba(236, 72, 153, 0.05) 0 1px, transparent 1px 25px),
+              repeating-linear-gradient(-45deg, rgba(236, 72, 153, 0.05) 0 1px, transparent 1px 25px);
+  z-index: 0;
+  pointer-events: none;
+}

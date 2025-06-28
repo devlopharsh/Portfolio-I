@@ -52,7 +52,7 @@ const Skills = () => {
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, ease: 'easeIn' }}
-                        viewport={{ once: true, amount: 0.5 }} className='text-5xl text-white font-bold absolute top-10 right-10'>Skills & Experience</motion.h1>
+                        viewport={{ once: true, amount: 0.5 }} className='text-5xl text-white font-bold absolute top-5 right-10'>Skills & Experience</motion.h1>
                     {/* Scroll Element */}
                     <div ref={scrollContainerRef} className="w-screen h-full overflow-x-scroll overflow-y-hidden no-scroll">
                         <div className="w-fit h-full flex gap-40 justify-start items-center relative">

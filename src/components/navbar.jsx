@@ -5,10 +5,10 @@ const Navbar = ({ activeSection, sectionRefs }) => {
     return (
         <nav className="flex justify-between items-center py-6 px-32 bg-[#00000046] sticky top-0 z-90 backdrop-blur-md ">
             <div className='flex-col justify-center items-center'>
-                <h1 className="text-7xl font-bold">Welcome</h1>
+                <h1 className="text-5xl font-bold">Welcome</h1>
                 <h6>to the World of Creativity</h6>
             </div>
-            <ul className="flex space-x-6 text-2xl">
+            <ul className="hidden md:flex space-x-6 text-xl">
                 {navItems.map((item) => (
                     <li
                         key={item}

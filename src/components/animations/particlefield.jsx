@@ -49,7 +49,7 @@ const Particles = () => {
 export default function ParticleField() {
     return (
         <Canvas
-            className="absolute top-0 left-0 w-full h-full z-0"
+            className="absolute top-10 left-0 w-full h-full z-0"
             camera={{ position: [0, 0, 10], fov: 75 }}
         >
             <ambientLight />

@@ -20,7 +20,7 @@ const FlipCard = ({image , heading , Exp , Cert }) => {
   return (
     <motion.div
       ref={tiltRef}
-      className="w-56 h-72 perspective rounded-xl mb-10 shadow-lg shadow-white/10"
+      className="w-40 h-50 perspective rounded-xl mb-10 shadow-lg shadow-white/10"
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}
       initial={{ opacity: 0, scale: 0.8 }}
@@ -35,14 +35,14 @@ const FlipCard = ({image , heading , Exp , Cert }) => {
       >
         {/* Front Side */}
         <div className="absolute w-full h-full backface-hidden backdrop-blur-sm bg-white/10 text-white rounded-xl flex flex-col items-center justify-center border-2 border-pink-600">
-          <img src={image} alt="" height={150} width={150} />
-          <p className='text-[#8892b0] mt-5 max-w-xl text-center'>Hover for more Info</p>
+          <img src={image} alt="" height={100} width={100} />
+          <p className='text-[#8892b0] mt-5 max-w-xl text-center text-sm'>Hover for more Info</p>
         </div>
 
         {/* Back Side */}
         <div className="absolute w-full h-full backface-hidden bg-gray-800 text-white rounded-xl flex flex-col items-center justify-center  transform rotate-y-180">
-          <h2 className="font-bold text-xl">{heading}</h2>
-          <p className="mt-2">With Experience of {Exp} years <br /> certified by {Cert} </p>
+          <h2 className="font-bold text-lg">{heading}</h2>
+          <p className="mt-2 text-xs w-11/12">With Experience of {Exp} years certified by {Cert} </p>
         </div>
       </div>
     </motion.div>

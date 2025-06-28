@@ -6,27 +6,29 @@ import ParticleField from './animations/particlefield'
 
 const About = () => {
     return (
-        <div className="flex flex-col md:flex-row items-center justify-between px-10 h-[70vh] relative overflow-hidden">
-
+        <div className="flex flex-col md:flex-row items-start justify-between px-10 h-[70vh] relative overflow-hidden">
             <motion.section
-                className="flex flex-col items-start justify-center w-full md:w-1/2 z-10"
+                className="flex flex-col items-center text-center md:items-start md:text-left justify-center w-full md:w-1/2 z-10"
                 initial={{ opacity: 0, x: 0 }}
                 whileInView={{ opacity: 1, x: 50 }}
                 transition={{ duration: 1 }}
                 viewport={{ once: true, amount: 0.5 }}
             >
                 <p className="text-pink-500 text-md">Hi, my name is</p>
-                <h1 className="text-5xl md:text-7xl font-bold mt-2 text-[#ccd6f6]">Harsh Kumar.</h1>
-                <h2 className="text-3xl md:text-4xl font-semibold mt-1 text-[#8892b0]">Front End Developer | UI/UX Designer</h2>
-                <p className="text-[#8892b0] mt-4 max-w-xl text-left">
+                <h1 className="text-3xl md:text-5xl font-bold mt-2 text-[#ccd6f6]">Harsh Kumar.</h1>
+                <h2 className="text-3xl md:text-2xl font-semibold mt-1 text-[#8892b0]">Front End Developer | UI/UX Designer</h2>
+                <p className="text-[#8892b0] mt-2 max-w-xl">
                     I’m a frontend developer specializing in building (and occasionally designing)
                     exceptional digital experiences. Currently, I’m focused on building responsive
                     web applications.
                 </p>
-                <button className="mt-6 border border-pink-500 text-pink-500 px-6 py-2 hover:bg-pink-500 hover:text-white transition">
-                    View Work
-                </button>
+                <a href="./resume.pdf" target="_blank">
+                    <button className="mt-3 border border-pink-500 text-pink-500 px-4 py-1 hover:bg-pink-500 hover:text-white transition">
+                        View Resume
+                    </button>
+                </a>
             </motion.section>
+
 
             {/* Right Section: Particle + Image */}
             <motion.section
