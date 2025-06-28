@@ -6,7 +6,7 @@ import ParticleField from './animations/particlefield'
 
 const About = () => {
     return (
-        <div className="flex flex-col md:flex-row items-start justify-between px-10 h-[70vh] relative overflow-hidden">
+        <div className="flex flex-col md:flex-row items-center justify-between px-10 h-[70vh] relative overflow-hidden">
             <motion.section
                 className="flex flex-col items-center text-center md:items-start md:text-left justify-center w-full md:w-1/2 z-10"
                 initial={{ opacity: 0, x: 0 }}
