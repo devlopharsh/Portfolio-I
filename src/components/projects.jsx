@@ -47,7 +47,7 @@ const Projects = () => {
                             <div className='border-2 border-[#fb64b75e] my-2 rounded-3xl py-6 px-5 flex flex-col items-center justify-center backdrop-blur-md md:backdrop-blur-none '>
                                 <img src="./PopX.svg" alt="Passaver" height={100} width={200} />
                                 <h4>React JS , Tailwind CSS , Vercel , etc.</h4>
-                                <p className='text-[#8892b0] text-sm mt-4 max-w-xl text-center'>Interactive Authantication Webpage Designed pixel perfect and to the point for better UI Experience . Used a react js to build the UI , Use the help of react library and Tailwind CSS to make a clean and better UI .  </p>
+                                <p className='text-[#8892b0] text-md mt-4 max-w-xl text-center'>Interactive Authantication Webpage Designed pixel perfect and to the point for better UI Experience . Used a react js to build the UI , Use the help of react library and Tailwind CSS to make a clean and better UI .  </p>
                                 <button
                                 onClick={()=> window.open('https://educase-project-one.vercel.app/', '_blank')} 
                                 className='mt-3 md:mt-6 border border-pink-500 text-pink-500 px-6 py-2 hover:bg-pink-500 hover:text-white transition rounded-3xl'>visit</button>
@@ -59,7 +59,7 @@ const Projects = () => {
                             <div className='border-2 border-[#fb64b75e] my-2 rounded-3xl py-8 px-5 flex flex-col items-center justify-center backdrop-blur-md md:backdrop-blur-none'>
                                 <img src="./Sukoon.svg" alt="Passaver" height={300} width={300} />
                                 <h4>Figma , Prototyping , UX , Product Designing ,etc.</h4>
-                                <p className='text-[#8892b0] text-sm mt-4 max-w-xl text-center'>Interactive Authantication Webpage Designed pixel perfect and to the point for better UI Experience . Used a react js to build the UI , Use the help of react library and Tailwind CSS to make a clean and better UI .  </p>
+                                <p className='text-[#8892b0] text-md mt-4 max-w-xl text-center'>Interactive Authantication Webpage Designed pixel perfect and to the point for better UI Experience . Used a react js to build the UI , Use the help of react library and Tailwind CSS to make a clean and better UI .  </p>
                                 <button
                                 onClick={()=> window.open('https://www.figma.com/design/63YoRUCXMHQYNaJDUutWTZ/Sukoon?node-id=1-2&t=mpyLfiMZuUMEimUh-1', '_blank')} 
                                 className='mt-3 md:mt-6 border border-pink-500 text-pink-500 px-6 py-2 hover:bg-pink-500 hover:text-white transition rounded-3xl'>visit</button>
