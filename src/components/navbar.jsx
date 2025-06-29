@@ -3,7 +3,7 @@ import React from 'react'
 const Navbar = ({ activeSection, sectionRefs }) => {
     const navItems = ['about' ,'projects' , 'skills' , 'contact'];
     return (
-        <nav className="flex justify-between items-center py-6 px-32 bg-[#00000046] sticky top-0 z-90 backdrop-blur-md ">
+        <nav className="flex  justify-center md:justify-between items-center py-6 px-32 bg-[#00000046] sticky top-0 z-90 backdrop-blur-md ">
             <div className='flex-col justify-center items-center'>
                 <h1 className="text-5xl font-bold">Welcome</h1>
                 <h6>to the World of Creativity</h6>

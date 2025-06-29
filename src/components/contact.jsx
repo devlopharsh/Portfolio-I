@@ -43,15 +43,15 @@ const Contact = () => {
       />
 
       {/* Foreground Form Container */}
-      <div className='relative z-10 h-screen w-screen flex items-center justify-center'>
+      <div className='relative z-10 h-100% w-100% flex items-center justify-center'>
         <motion.div
-          initial={{ opacity: 0 , y:50 }}
-          whileInView={{ opacity: 1 , y:0}}
+          initial={{ opacity: 0  }}
+          whileInView={{ opacity: 1}}
           transition={{ duration: 1, ease: 'easeIn' }}
           viewport={{ once: true }}
-          className='h-[90%] w-[80%] max-w-4xl bg-gradient-to-br from-white/5 to-white/1+5 backdrop-blur-xs border border-white/15 rounded-2xl flex flex-col items-center justify-center neon-border'
+          className='h-[80%] w-[80%] max-w-4xl bg-gradient-to-br from-white/10 to-white/20 backdrop-blur-xs border border-white/15 rounded-2xl flex flex-col items-center justify-center neon-border'
         >
-          <h1 className='text-5xl text-white font-bold mb-6'>Let's Connect</h1>
+          <h1 className='text-5xl text-white font-bold mt-5 md:mt-3'>Let's Connect</h1>
 
           <form className='w-4/5 h-fit py-5' action="URL" method='POST'>
             <input
@@ -60,7 +60,7 @@ const Contact = () => {
               className="w-full px-5 py-3 rounded-2xl bg-transparent border border-gray-300 text-white placeholder-gray-400 focus:outline-none mt-5"
             />
 
-            <div className="flex gap-4 mt-7">
+            <div className="flex gap-4 mt-5">
               <input
                 type="email"
                 placeholder="Email"
@@ -86,7 +86,7 @@ const Contact = () => {
               Send
             </button>
 
-            <div className='flex justify-center items-center gap-5 my-12'>
+            <div className='flex justify-center items-center gap-5 my-5'>
               <a href="https://www.linkedin.com/in/harsh-kumar-31391a31a/" target='blank'>
                 <img src="./linkedin.svg" alt="linkedin" height={50} width={50} className='hover:invert duration-300' />
               </a>

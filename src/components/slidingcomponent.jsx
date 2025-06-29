@@ -19,7 +19,7 @@ const SlidingWindow = ({ children }) => {
       {/* Left arrow */}
       <button
         onClick={() => scroll('left')}
-        className="absolute left-2 top-1/2  transform-translate-y-1/2 rotate-z-90  text-pink-500 hover:text-pink-300 text-5xl z-10 transition rounded-full p-1"
+        className="absolute top-1/3 left-5 md:left-2 md:top-1/3  transform-translate-y-1/2 rotate-z-90  text-pink-500 hover:text-pink-300 text-5xl z-10 transition rounded-full p-1"
       >
        🔻
       </button>
@@ -41,7 +41,7 @@ const SlidingWindow = ({ children }) => {
       {/* Right arrow */}
       <button
         onClick={() => scroll('right')}
-        className="absolute right-2 top-1/2 transform-translate-y-1/2 rotate-z-270  text-pink-500 hover:text-pink-300 text-5xl z-10 transition rounded-full p-1"
+        className="absolute top-1/3 right-5 md:right-2 md:top-1/3 transform-translate-y-1/2 rotate-z-270  text-pink-500 hover:text-pink-300 text-5xl z-10 transition rounded-full p-1"
       >
         🔻
       </button>
