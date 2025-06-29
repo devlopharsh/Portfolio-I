@@ -26,7 +26,7 @@ const About = () => {
                 className="flex flex-col z-20 p-3 items-center text-center relative top-[55%] 
              md:top-0 md:left-0 md:items-start md:text-left justify-center 
              w-full md:w-1/2 
-             backdrop-blur-sm border-[2px] border-[#e6007645] rounded-xl
+             backdrop-blur-lg border-[2px] border-[#e6007645] rounded-xl
              md:backdrop-blur-none md:border-0 "
                 initial={initialAnimation}
                 whileInView={whileInViewAnimation}
