@@ -15,7 +15,7 @@ const SlidingWindow = ({ children }) => {
   };
 
   return (
-    <div className="relative w-full h-full mx-auto overflow-hidden shadow-lg">
+    <div className="relative w-full h-fit mx-auto overflow-hidden shadow-lg">
       {/* Left arrow */}
       <button
         onClick={() => scroll('left')}

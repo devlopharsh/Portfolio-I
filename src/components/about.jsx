@@ -49,9 +49,9 @@ const About = () => {
             </motion.section>
 
 
-            {/* Right Section: Particle + Image */}
+            {/* Right Section: Image */}
             <motion.section
-                className="w-full  relative top-[-45%] md:top-0 md:left-0 md:w-1/2 h-full flex items-center justify-center"
+                className="w-full  relative top-[-35%] md:top-0 md:left-0 md:w-1/2 h-full flex items-center justify-center"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
