@@ -18,15 +18,11 @@ const FlipCard = ({image , heading , Exp , Cert }) => {
   }, []);
 
   return (
-    <motion.div
+    <div
       ref={tiltRef}
-      className="w-40 h-50 perspective rounded-xl mb-10 shadow-lg shadow-white/10"
+      className="w-30 h-35 perspective rounded-xl "
       onMouseEnter={() => setIsFlipped(true)}
       onMouseLeave={() => setIsFlipped(false)}
-      initial={{ opacity: 0, scale: 0.8 }}
-      whileInView={{ opacity: 1, scale: 1 }}
-      transition={{ duration: '0.5' , ease: 'easeInOut'}}
-      viewport={{once:true ,amount: 0.8}}
     >
       <div
         className={`relative w-full h-full transition-transform duration-500 preserve-3d rounded-xl ${
@@ -34,18 +30,16 @@ const FlipCard = ({image , heading , Exp , Cert }) => {
         }`}
       >
         {/* Front Side */}
-        <div className="absolute w-full h-full backface-hidden backdrop-blur-sm bg-white/10 text-white rounded-xl flex flex-col items-center justify-center border-2 border-pink-600">
-          <img src={image} alt="" height={100} width={100} />
-          <p className='text-[#8892b0] mt-5 max-w-xl text-center text-sm'>Hover for more Info</p>
+        <div className="absolute w-full h-full backface-hidden backdrop-blur-sm bg-white/5 text-white rounded-xl flex flex-col items-center justify-center border-2 border-white/5">
+          <img src={image} alt="" height={70} width={70} />
         </div>
-
         {/* Back Side */}
         <div className="absolute w-full h-full backface-hidden bg-gray-800 text-white rounded-xl flex flex-col items-center justify-center  transform rotate-y-180">
-          <h2 className="font-bold text-lg">{heading}</h2>
-          <p className="mt-2 text-xs w-11/12">With Experience of {Exp} years certified by {Cert} </p>
+          <h2 className="font-bold text-md">{heading}</h2>
+          <p className="mt-1 text-xs w-11/12">With Experience of {Exp} years certified by {Cert} </p>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

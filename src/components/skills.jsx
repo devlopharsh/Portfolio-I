@@ -43,11 +43,11 @@ const Skills = () => {
                 viewport={{ once: true, amount: 0.5 }}
             >
                 <div className="relative top-0 left-0 w-screen h-screen z-0 ">
-                    <HexGridBackground />
+                    {/* <HexGridBackground /> */}
                 </div>
             </motion.section>
             <div className='w-full h-full absolute flex-col items-start justify-center '>
-                <div className='width-[500vw] h-full flex flex-col items-start justify-center backdrop-blur-md'>
+                <div className='width-[500vw] h-full flex flex-col items-start justify-center'>
                     <motion.h1
                         initial={{ opacity: 0, x: 50 }}
                         whileInView={{ opacity: 1, x: 0 }}
@@ -67,8 +67,6 @@ const Skills = () => {
                                 }}
                                 className="h-[5px] bg-pink-600 w-full absolute top-1/2 left-0 shadow-lg shadow-white"
                             />
-
-                            {/* Content on top of line */}
                             <Frontend iscomplete={iscomplete} />
                             <Designer />
                         </div>

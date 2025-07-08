@@ -7,6 +7,7 @@ import Navbar from './components/navbar.jsx'
 import About from './components/about.jsx';
 import Projects from './components/projects.jsx';
 import Skills from './components/skills.jsx';
+import SkillsUpdated from './components/skills updated.jsx';
 import Contact from './components/contact.jsx';
 
 //imported animations
@@ -57,22 +58,23 @@ function App() {
         <Navbar activeSection={activeSection} sectionRefs={sectionRefs} />
 
         <section id="about" ref={sectionRefs.about} className="min-h-1/2 px-10 overflow-hidden ">
-          <div className="absolute top-0 left-0 w-full h-4/5   z-0 ">
+          <div className="fixed top-0 left-0 w-full h-full z-0 ">
             <ParticleField />
           </div>
           <About />
         </section>
 
 
-        <section id="projects" ref={sectionRefs.projects} className="min-h-screen px-10 py-20 bg-[#c1c1c113] border-2 border-white/10">
+        <section id="projects" ref={sectionRefs.projects} className="min-h-screen  bg-[#c1c1c109] z-10">
           <Projects />
         </section>
 
         <section id="skills " ref={sectionRefs.skills} className="min-h-screen flex justify-center items-center">
-          <Skills />
+          {/* <Skills /> */}
+          <SkillsUpdated />
         </section>
 
-        <section id="contact" ref={sectionRefs.contact} className="min-h-screen px-10 py-20 bg-black/20 border-y-2 border-black relative overflow-hidden">
+        <section id="contact" ref={sectionRefs.contact} className="h-screen relative overflow-hidden">
           <Contact />
         </section>
 

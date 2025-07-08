@@ -37,9 +37,9 @@ const About = () => {
                 <h1 className="text-5xl md:text-5xl font-bold md:mt-1 text-[#ffffff]">Harsh Kumar.</h1>
                 <h2 className="text-xl md:text-xl font-semibold md:mt-0.5 text-[#8892b0]">Front End Developer | UI/UX Designer</h2>
                 <p className="text-[#d0d2d5] md:mt-2 max-w-xl text-sm md:text-md">
-                    I’m a frontend developer specializing in building (and occasionally designing)
-                    exceptional digital experiences. Currently, I’m focused on building responsive
-                    web applications.
+                    I’m a Web Developer and UI/UX Designer focused on creating responsive web 
+                    apps with clean design and smooth user experiences. My goal is to bridge 
+                    the gap between design and development to create seamless, impactful user experiences.
                 </p>
                 <a href="./resume.pdf" target="_blank">
                     <button className="mt-3 border border-pink-500 text-pink-500 px-4 py-1 hover:bg-pink-500 hover:text-white transition">
