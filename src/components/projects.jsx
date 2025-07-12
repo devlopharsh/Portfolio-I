@@ -24,7 +24,7 @@ const Projects = () => {
                 </motion.section>
 
                 {/* Project container */}
-                <div className='flex flex-col md:flex-row items-center justify-center h-full w-full scale-85 md:scale-100'>
+                <div className='flex flex-col md:flex-row items-center justify-center h-full w-full scale-85 md:scale-100 relative top-7 md:top-0'>
                     {/* Frontend Projects */}
                     <motion.section
                         className="w-[100vw] md:w-1/2  h-full relative flex flex-col items-center justify-center between z-20"
