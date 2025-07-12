@@ -7,14 +7,14 @@ import FlipCard from './Subcomponents/Card'
 const SkillsUpdated = () => {
     return (
         <>
-            <div className='w-screen h-screen flex items-center justify-center'>
+            <div className='w-screen h-screen flex items-center justify-center scale-95 md:scale-100'>
                 <div className='w-full h-full md:w-11/12 md:h-10/12  backdrop-blur-sm border-2 border-white/5 rounded-2xl flex flex-col items-center justify-center shadow-md '>
                     <motion.h1
                         initial={{ opacity: 0, y: 10 }}
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 1, ease: 'easeIn' }}
                         viewport={{ once: true, amount: 0.5 }} className='text-5xl text-white font-bold mt-5 md:mt-3.5 '>Skills & Experience</motion.h1>
-                    <div className='w-full h-full flex flex-col md:flex-row md:items-center md:justify-center justify-around items-center'>
+                    <div className='w-full h-full flex flex-col md:flex-row md:items-center md:justify-center justify-around items-center md:mt-0 mt-5 '>
                         {/* skills container */}
                         <div className='w-2/3 flex flex-col items-center justify-center gap-2.5 '>
                             <motion.div

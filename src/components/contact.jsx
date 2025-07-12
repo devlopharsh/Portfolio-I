@@ -59,7 +59,7 @@ const Contact = () => {
             className='h-[45%] w-full max-w-4xl bg-gradient-to-br backdrop-blur-md border border-white/15 rounded-2xl flex flex-col items-center justify-center'
           >
             <h1 className='text-5xl text-white font-bold mt-5 md:mt-3'>Contact Me</h1>
-            <p className='text-gray-400 text-md w-[80%] mt-3'>With young energy and eagerness to learn new tech and applying them in use, I’m always open to new opportunities, creative collaborations, or simply connecting with like-minded individuals. Whether you have a project in mind or just want to exchange ideas, feel free to reach out—I’d love to chat!</p>
+            <p className='text-gray-400 text-sm md:text-md w-[80%] mt-3 '>With young energy and eagerness to learn new tech and applying them in use, I’m always open to new opportunities, creative collaborations, or simply connecting with like-minded individuals. Whether you have a project in mind or just want to exchange ideas, feel free to reach out—I’d love to chat!</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, x: 50 }}

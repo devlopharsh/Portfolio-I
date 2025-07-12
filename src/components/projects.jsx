@@ -18,13 +18,13 @@ const Projects = () => {
                     transition={{ duration: 1, ease: 'easeInOut' , delay : 1 }}
                     viewport={{ once: true, amount: 0.5 }}
                 >
-                    <div className=" w-full h-[90vh] md:h-[150vh] shadow-2xs shadow-pink-600 md:relative md:top-[-20vh] opacity-30 md:opacity-70">
+                    <div className=" w-full h-[90vh] md:h-[150vh]  md:relative md:top-[-20vh] opacity-30 md:opacity-70">
                         <D3Sphere />
                     </div>
                 </motion.section>
 
                 {/* Project container */}
-                <div className='flex flex-col md:flex-row items-center justify-center h-full w-full'>
+                <div className='flex flex-col md:flex-row items-center justify-center h-full w-full scale-85 md:scale-100'>
                     {/* Frontend Projects */}
                     <motion.section
                         className="w-[100vw] md:w-1/2  h-full relative flex flex-col items-center justify-center between z-20"

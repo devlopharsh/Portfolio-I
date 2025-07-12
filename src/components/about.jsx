@@ -27,7 +27,7 @@ const About = () => {
              md:top-0 md:left-0 md:items-start md:text-left justify-center 
              w-full md:w-1/2 
              backdrop-blur-lg border-[2px] border-[#e6007645] rounded-xl
-             md:backdrop-blur-none md:border-0 "
+             md:backdrop-blur-none md:border-0 scale-y-90 md:scale-y-100"
                 initial={initialAnimation}
                 whileInView={whileInViewAnimation}
                 transition={{ duration: 1 , delay: 1}}
@@ -51,7 +51,7 @@ const About = () => {
 
             {/* Right Section: Image */}
             <motion.section
-                className="w-full  relative top-[-35%] md:top-0 md:left-0 md:w-1/2 h-full flex items-center justify-center"
+                className="w-full  relative top-[-40%] md:top-0 md:left-0 md:w-1/2 h-full flex items-center justify-center"
                 initial={{ opacity: 0, x: 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 1 }}
