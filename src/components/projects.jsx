@@ -12,7 +12,7 @@ const Projects = () => {
 
                 {/* Sphere block */}
                 <motion.section
-                    className=" absolute w-full h-full md:h-[50vw] z-[0] top-0 left-0 flex-col items-center justify-center md:z-10 overflow-hidden"
+                    className=" absolute w-full h-full md:h-[50vw] z-[0] top-0 left-0 flex-col items-center justify-center  overflow-hidden"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1}}
                     transition={{ duration: 1, ease: 'easeInOut' , delay : 1 }}
