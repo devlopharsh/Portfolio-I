@@ -87,7 +87,7 @@ const Projects = () => {
                     </p>
                     <button
                       onClick={() =>
-                        window.open("https://tvic.vercel.app/", "_blank")
+                        window.open("https://sih-25-sage.vercel.app/", "_blank")
                       }
                       className="mt-3 md:mt-6 border border-pink-500 text-pink-500 px-6 py-2 hover:bg-pink-500 hover:text-white transition rounded-3xl"
                     >
